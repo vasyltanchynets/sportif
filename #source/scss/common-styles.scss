@@ -1,0 +1,107 @@
+@import "./nullstyles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+$oswald: "Oswald";
+$opensans: "Open Sans";
+
+$md1: 1440px;
+$md2: 992px;
+$md3: 768px;
+$md4: 480px;
+$minwidth: 320px;
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@import "./ui.scss";
+@import "./header.scss";
+@import "./footer.scss";
+
+//#######################################################################################################
+.btn-add-to-card {
+  max-width: 130px;
+  background: #a04955;
+  align-self: center;
+  span {
+    display: inline-block;
+    font-family: $oswald;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+    padding: 4px 8px 4px 4px;
+  }
+  img {
+    padding: 7px 0 7px 7px;
+  }
+  transition: all 0.5s ease 0s;
+  &:hover {
+    background: #000000;
+  }
+}
+
+.btn-up {
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  background: #a04955;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease 0s;
+  &:hover {
+    background: #000;
+  }
+}
+
+//#######################################################################################################
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination-body {
+  display: flex;
+  justify-content: space-between;
+  width: 135px;
+  li {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    span {
+      font-family: $oswald;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 180.8%;
+      padding: 0 13px;
+    }
+    &:nth-child(1) {
+      background: #a04955;
+      span {
+        color: #ffffff;
+      }
+    }
+    &:nth-child(2) {
+      background: #f1f1f1;
+      border: 1px solid #a04955;
+      span {
+        color: #a04955;
+      }
+    }
+  }
+}
+
+.pagination-next {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #f1f1f1 url("../img/shop/12.png") 50% 50%/50% 50% no-repeat;
+  border: 1px solid #a04955;
+}
